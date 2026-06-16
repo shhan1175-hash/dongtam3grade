@@ -621,7 +621,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
 
 <!-- 헤더 -->
 <div class="hd">
-  <div class="hd-logo">탐구<em>기록지</em> <small style="font-size:10px;color:var(--g5);font-weight:400">2025 학종 최적화</small></div>
+  <div class="hd-logo">탐구<em>기록지</em> <small style="font-size:10px;color:var(--g5);font-weight:400">2026 학종 대비</small></div>
   <div class="hd-right">
     <button class="mode-badge" onclick="document.getElementById('setupOv').style.display='flex'">⚙️ <span id="modeBadgeText">학년·계열 설정</span></button>
     <span class="saved-ok" id="savedOk">✓ 저장 완료!</span>
@@ -693,7 +693,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
 <div class="notice">
   <div class="acc"><div class="acc-hd-btn" style="display:flex;align-items:center;gap:8px;padding:12px 18px;cursor:pointer;user-select:none;list-style:none" onclick="toggleAcc(this)">
       <span style="font-size:16px">⚠️</span>
-      <span class="notice-title">작성 전 필독 — 좋은 탐구 vs 나쁜 탐구 · 자율활동 vs 진로활동 차이</span>
+      <span class="notice-title">작성 전 필독 — 좋은 탐구 vs 나쁜 탐구 · 동아리 활동 vs 진로활동 차이</span>
       <span style="margin-left:auto;font-size:15px;color:var(--red)">▼</span>
     </div><div class="acc-body acc-collapsed">
     <div class="notice-body" style="display:block;padding:12px 18px 14px">
@@ -723,7 +723,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
     </div>
     <div class="diff-row">
       <div class="diff-j">
-        <strong>📘 자율활동 탐구 (파란색 탭)</strong>
+        <strong>📘 동아리 활동 탐구 (파란색 탭)</strong>
         교과 수업에서 생긴 궁금증 출발 → 학업역량·탐구력·공동체 역할 중심.<br>
         "수업에서 배운 개념을 더 파고든" 흐름이 핵심.<br>
         <b>생기부 500자 이내 반영</b>
@@ -741,13 +741,13 @@ body:not(.min-mode) .deep-prompt { display: block; }
 
 <!-- 탭 -->
 <div class="tabs">
-  <button class="tab blue on" id="tab0" onclick="goTab(0)">📘 탐구 기록 ①<br><small style="font-weight:500;font-size:10px">자율활동</small></button>
+  <button class="tab blue on" id="tab0" onclick="goTab(0)">📘 탐구 기록 ①<br><small style="font-weight:500;font-size:10px">동아리 활동</small></button>
   <button class="tab purple" id="tab1" onclick="goTab(1)">🎯 탐구 기록 ②<br><small style="font-weight:500;font-size:10px">진로활동</small></button>
   <button class="tab" id="tab2" onclick="goTab(2)" style="background:#ccfbf1;color:#0f766e">🤝 탐구 기록 ③<br><small style="font-weight:500;font-size:10px">팀프로젝트</small></button>
 </div>
 
 
-<!-- ══════ 자율활동 패널 ══════ -->
+<!-- ══════ 동아리 활동 패널 ══════ -->
 <div class="panel on" id="p0">
 
   <!-- 탐구 주제 참고 사이트 -->
@@ -780,7 +780,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
   <!-- 📋 가이드 배너 — 깊이 파고들기 모드 -->
   <div class="guide-banner full-only" id="guideBannerAdvJ" style="display:none">
     <div class="guide-banner-title">🚀 깊이 파고들기 — 심화·종적연계 전략</div>
-    <div class="guide-banner-sub">단순 완결이 아닌 <b>독창적 관점 + 검증 + 학년 간 연계</b>가 핵심입니다.<br>입학사정관은 "이 학생만 쓸 수 있는 탐구인가?"를 봅니다. <b>생기부 자율활동 500자</b>에 녹여냅니다.</div>
+    <div class="guide-banner-sub">단순 완결이 아닌 <b>독창적 관점 + 검증 + 학년 간 연계</b>가 핵심입니다.<br>입학사정관은 "이 학생만 쓸 수 있는 탐구인가?"를 봅니다. <b>생기부 동아리 활동 500자</b>에 녹여냅니다.</div>
     <div class="guide-steps">
       <div class="guide-step">
         <div class="guide-step-num">STEP 1 · 개념 정밀 해부</div>
@@ -806,8 +806,8 @@ body:not(.min-mode) .deep-prompt { display: block; }
     </div>
   </div>
   <div class="guide-banner" id="guideBannerBasicJ">
-    <div class="guide-banner-title">📘 자율활동 탐구 — 이렇게 따라하세요!</div>
-    <div class="guide-banner-sub">교과 수업에서 생긴 궁금증을 출발점으로, 스스로 탐구하고 성장한 과정을 기록합니다.<br>아래 3단계를 순서대로 따라가면 됩니다. <b>생기부 자율활동 500자</b> 이내 반영됩니다.</div>
+    <div class="guide-banner-title">📘 동아리 활동 탐구 — 이렇게 따라하세요!</div>
+    <div class="guide-banner-sub">교과 수업에서 생긴 궁금증을 출발점으로, 스스로 탐구하고 성장한 과정을 기록합니다.<br>아래 3단계를 순서대로 따라가면 됩니다. <b>생기부 동아리 활동 500자</b> 이내 반영됩니다.</div>
     <div class="guide-steps">
       <div class="guide-step">
         <div class="guide-step-num">STEP 1 · 10~15분</div>
@@ -993,7 +993,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
       <div class="diag-result" id="diagResultJ"></div>
     </div></div>
 
-  <!-- 📚 대학 가이드북 우수사례 (자율활동) -->
+  <!-- 📚 대학 가이드북 우수사례 (동아리 활동) -->
   <div class="acc acc-yellow"><div class="acc-hd-btn" onclick="toggleAcc(this)">
       <div class="acc-left-text">📚 대학 학종 가이드북 우수사례 — 입학사정관은 이렇게 봐요</div>
       <span class="acc-arrow">▼</span>
@@ -1363,7 +1363,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
     <div class="frow" style="border-top:none">
       <div class="flbl t-lbl">생기부<br>특기사항<br>초안</div>
       <div class="fbody">
-        <textarea data-key="j_bio" rows="6" placeholder="생기부 특기사항 초안&#10;&#10;패턴: [수업]에서 [구체적 호기심]을 갖고 [탐구방법들]로 탐구함. [핵심발견+비교분석]. [새의문]이 생겨 [추가탐구]로 이어지며 [성장].&#10;자율활동 500자 이내 / 체크: ①학생주도성 ②구체적내용 ③호기심출발 ④탐구연결 ⑤성장"></textarea>
+        <textarea data-key="j_bio" rows="6" placeholder="생기부 특기사항 초안&#10;&#10;패턴: [수업]에서 [구체적 호기심]을 갖고 [탐구방법들]로 탐구함. [핵심발견+비교분석]. [새의문]이 생겨 [추가탐구]로 이어지며 [성장].&#10;동아리 활동 500자 이내 / 체크: ①학생주도성 ②구체적내용 ③호기심출발 ④탐구연결 ⑤성장"></textarea>
       </div>
     </div>
     <div class="frow">
@@ -1824,7 +1824,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
 <!-- ══════ 팀프로젝트 패널 ══════ -->
 <div class="panel" id="p2">
   <div class="topic-hero">
-    <div><h3>🤝 팀프로젝트 활동지</h3><p>공동 주제 속에서 나의 역할, 자료 검증, 갈등 조정, 개인 성장까지 따로 기록합니다. 자율활동·진로활동 어디에 연결할지 선택해 작성하세요.</p></div>
+    <div><h3>🤝 팀프로젝트 활동지</h3><p>공동 주제 속에서 나의 역할, 자료 검증, 갈등 조정, 개인 성장까지 따로 기록합니다. 동아리 활동·진로활동 어디에 연결할지 선택해 작성하세요.</p></div>
     <div class="topic-actions"><button class="topic-link" type="button" onclick="openTopicHelp()">자료 검색 열기</button></div>
   </div>
 
@@ -1833,7 +1833,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
     <div class="info-row">
       <div class="ic"><div class="flbl">학번</div><div class="fbody"><input data-key="t_no" placeholder="예) 30101"></div></div>
       <div class="ic"><div class="flbl">이름</div><div class="fbody"><input data-key="t_name" placeholder="예) 김OO"></div></div>
-      <div class="ic"><div class="flbl">활동 구분</div><div class="fbody"><input data-key="t_type" placeholder="예) 자율활동 / 진로활동 / 동아리 연계"></div></div>
+      <div class="ic"><div class="flbl">활동 구분</div><div class="fbody"><input data-key="t_type" placeholder="예) 동아리 활동 / 진로활동 / 동아리 연계"></div></div>
       <div class="ic"><div class="flbl">팀명</div><div class="fbody"><input data-key="t_team" placeholder="예) 데이터 탐구팀"></div></div>
       <div class="ic"><div class="flbl">탐구 기간</div><div class="fbody"><input data-key="t_period" placeholder="예) 5월 1주 ~ 6월 2주"></div></div>
     </div>
