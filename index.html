@@ -2618,8 +2618,15 @@ function doSave() {
     return;
   }
 
-  var saved = '<script>window.__SAVED__=' + JSON.stringify(data) + ';<\/script>';
-  var html = document.documentElement.outerHTML.replace('</head>', saved + '</head>');
+  // localStorage에도 즉시 백업
+  try { localStorage.setItem(AUTOSAVE_KEY, JSON.stringify(data)); } catch (e) {}
+  // 입력값에 < > </script> 등이 들어가도 깨지지 않도록 유니코드로 이스케이프
+  var json = JSON.stringify(data).replace(/</g, '\\u003c').replace(/>/g, '\\u003e');
+  var saved = '<scr' + 'ipt>window.__SAVED__=' + json + ';<\/scr' + 'ipt>';
+  // 이전 저장 때 들어간 __SAVED__ 스크립트 제거(중복 누적 방지)
+  var docHtml = document.documentElement.outerHTML
+    .replace(/<script>window\.__SAVED__=[\s\S]*?<\/script>/g, '');
+  var html = '<!DOCTYPE html>\n' + docHtml.replace('</head>', saved + '</head>');
 
   // ① 로컬 파일 저장 (기존 기능 유지)
   var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
@@ -2659,7 +2666,29 @@ function doSave() {
     });
 }
 
-if (window.__SAVED__) restore(window.__SAVED__);
+// ── 자동 임시저장 (localStorage) — 새로고침·재방문 시 내용 유지 ──
+var AUTOSAVE_KEY = '_tamgu_autosave_v7';
+function autoSave() {
+  try { localStorage.setItem(AUTOSAVE_KEY, JSON.stringify(collect())); } catch (e) {}
+}
+function autoRestore() {
+  try {
+    var raw = localStorage.getItem(AUTOSAVE_KEY);
+    if (raw) { restore(JSON.parse(raw)); return true; }
+  } catch (e) {}
+  return false;
+}
+// 입력·체크 변경 시마다 자동 저장
+document.addEventListener('input', autoSave);
+document.addEventListener('change', autoSave);
+
+// 복원 우선순위: 저장된 HTML 파일(__SAVED__) > localStorage 임시저장
+if (window.__SAVED__) {
+  restore(window.__SAVED__);
+  autoSave(); // 불러온 내용도 임시저장에 반영
+} else {
+  autoRestore();
+}
 calcProg();
 </script>
 
