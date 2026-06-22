@@ -732,7 +732,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
 <div class="notice">
   <div class="acc"><div class="acc-hd-btn" style="display:flex;align-items:center;gap:8px;padding:12px 18px;cursor:pointer;user-select:none;list-style:none" onclick="toggleAcc(this)">
       <span style="font-size:16px">⚠️</span>
-      <span class="notice-title">작성 전 필독 — 좋은 탐구 vs 나쁜 탐구 · 자율활동 vs 진로활동 차이</span>
+      <span class="notice-title">작성 전 필독 — 좋은 탐구 vs 나쁜 탐구 · 자율활동 vs 진로활동(동아리 활동) 차이</span>
       <span style="margin-left:auto;font-size:15px;color:var(--red)">▼</span>
     </div><div class="acc-body acc-collapsed">
     <div class="notice-body" style="display:block;padding:12px 18px 14px">
@@ -768,7 +768,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
         <b>생기부 500자 이내 반영</b>
       </div>
       <div class="diff-n">
-        <strong>🎯 진로활동 탐구 (보라색 탭)</strong>
+        <strong>🎯 진로활동(동아리 활동) 탐구 (보라색 탭)</strong>
         희망 진로·전공과 직접 연결된 탐구 → 진로역량 중심.<br>
         "왜 이 직업인가"를 보여주는 직업탐색·심화탐구.<br>
         <b>생기부 500자 이내 반영</b>
@@ -781,7 +781,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
 <!-- 탭 -->
 <div class="tabs">
   <button class="tab blue on" id="tab0" onclick="goTab(0)">📘 탐구 기록 ①<br><small style="font-weight:500;font-size:10px">자율활동</small></button>
-  <button class="tab purple" id="tab1" onclick="goTab(1)">🎯 탐구 기록 ②<br><small style="font-weight:500;font-size:10px">진로활동</small></button>
+  <button class="tab purple" id="tab1" onclick="goTab(1)">🎯 탐구 기록 ②<br><small style="font-weight:500;font-size:10px">진로활동(동아리 활동)</small></button>
   <button class="tab" id="tab2" onclick="goTab(2)" style="background:#ccfbf1;color:#0f766e">🤝 탐구 기록 ③<br><small style="font-weight:500;font-size:10px">팀프로젝트</small></button>
 </div>
 
@@ -1423,7 +1423,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
 </div>
 </div></div>
 
-<!-- ══════ 진로활동 패널 ══════ -->
+<!-- ══════ 진로활동(동아리 활동) 패널 ══════ -->
 <div class="panel" id="p1">
 
   <!-- 탐구 주제 참고 사이트 -->
@@ -1451,10 +1451,10 @@ body:not(.min-mode) .deep-prompt { display: block; }
     <div class="prog-label" id="nProgLabel">작성률 0% (0/25칸)</div>
   </div>
 
-  <!-- 📋 따라하기 가이드 배너 (진로활동) -->
+  <!-- 📋 따라하기 가이드 배너 (진로활동(동아리 활동)) -->
   <div class="guide-banner purple">
-    <div class="guide-banner-title">🎯 진로활동 탐구 — 이렇게 따라하세요!</div>
-    <div class="guide-banner-sub">희망 진로·전공과 직접 연결된 탐구로, "왜 이 직업인가"를 구체적으로 보여줍니다.<br>아래 3단계를 순서대로 따라가면 됩니다. <b>생기부 진로활동 500자</b> 이내 반영됩니다.</div>
+    <div class="guide-banner-title">🎯 진로활동(동아리 활동) 탐구 — 이렇게 따라하세요!</div>
+    <div class="guide-banner-sub">희망 진로·전공과 직접 연결된 탐구로, "왜 이 직업인가"를 구체적으로 보여줍니다.<br>아래 3단계를 순서대로 따라가면 됩니다. <b>생기부 진로활동(동아리 활동) 500자</b> 이내 반영됩니다.</div>
     <div class="guide-steps">
       <div class="guide-step">
         <div class="guide-step-num">STEP 1 · 10~15분</div>
@@ -1507,12 +1507,12 @@ body:not(.min-mode) .deep-prompt { display: block; }
         <div class="sc-item" id="sci_n8"><input type="checkbox" id="sc_n8" onchange="updateSC('n',9)"><label for="sc_n8">이 직업에 필요한 역량과 내 탐구의 연결을 설명할 수 있다</label></div>
         <div class="sc-item" id="sci_n9"><input type="checkbox" id="sc_n9" onchange="updateSC('n',9)"><label for="sc_n9">다음에 더 탐구하고 싶은 심화 주제가 생겼다</label></div>
       </div>
-      <div class="sc-tip" id="scTipN" style="color:#5b21b6;background:#f5f3ff;border-color:#ddd6fe">💡 진로활동은 "왜 이 직업인가"를 탐구로 증명하는 공간입니다. 체크 안 된 항목을 먼저 보완하세요!</div>
+      <div class="sc-tip" id="scTipN" style="color:#5b21b6;background:#f5f3ff;border-color:#ddd6fe">💡 진로활동(동아리 활동)은 "왜 이 직업인가"를 탐구로 증명하는 공간입니다. 체크 안 된 항목을 먼저 보완하세요!</div>
     </div></div>
 
   <!-- 🔄 나쁜→좋은 탐구 변환 카드 (진로) -->
   <div class="acc acc-red"><div class="acc-hd-btn" onclick="toggleAcc(this)">
-      <div class="acc-hd-left"><span style="font-size:18px">🔄</span><div><div class="acc-title">나쁜 탐구 → 좋은 탐구 변환 예시 (진로활동)</div><div class="acc-sub">계열별 비교 예시로 내 진로 탐구를 점검하세요</div></div></div>
+      <div class="acc-hd-left"><span style="font-size:18px">🔄</span><div><div class="acc-title">나쁜 탐구 → 좋은 탐구 변환 예시 (진로활동(동아리 활동))</div><div class="acc-sub">계열별 비교 예시로 내 진로 탐구를 점검하세요</div></div></div>
       <span class="acc-arrow">▼</span>
     </div><div class="acc-body acc-collapsed" id="btobBodyN">
       <div class="btob-tab-bar">
@@ -1552,7 +1552,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
       </div>
     </div></div>
 
-  <!-- 📚 대학 가이드북 우수사례 (진로활동) -->
+  <!-- 📚 대학 가이드북 우수사례 (진로활동(동아리 활동)) -->
   <div class="acc acc-yellow"><div class="acc-hd-btn" onclick="toggleAcc(this)">
       <div class="acc-left-text">📚 대학 학종 가이드북 우수사례 — 입학사정관은 이렇게 봐요</div>
       <span class="acc-arrow">▼</span>
@@ -1563,11 +1563,11 @@ body:not(.min-mode) .deep-prompt { display: block; }
         <button class="case-tab" onclick="switchCase('n','art')">🎨 예체능계열</button>
       </div>
       <div class="case-panel on" id="case_n_sci">
-        <div class="case-card"><div class="case-card-hd"><span class="case-univ">경희대 2026 가이드북</span><span class="case-subject">의학·보건 — 정밀의학과 유전자 맞춤 치료 (진로활동)</span><span class="case-field">자연계</span></div><div class="case-body-text"><div class="case-good"><div class="case-good-label">✅ 우수 사례</div>p53 수업 후 "왜 같은 암 환자도 치료 반응이 다른가?" 의문 → 정밀의학 논문 3편 비교·TCGA 공개 데이터 직접 분석 → "기술은 있는데 접근성·비용 문제" 한계 발견 → 의료 형평성 논문 추가 탐구 → 진로: "유전체 분석 기반 정밀의학 전문의"로 구체화.</div><div class="case-eval"><b>🏫 입학사정관 평가 (경희대)</b><br>공개 데이터베이스 직접 활용, 탐구 중 새 한계 발견, 진로 구체화까지 이어지는 흐름이 최고 수준 탐구입니다.</div><div class="case-src">출처: 경희대학교 2026학년도 학생부전형 가이드북 Vol.41 (iphak.khu.ac.kr)</div></div></div>
+        <div class="case-card"><div class="case-card-hd"><span class="case-univ">경희대 2026 가이드북</span><span class="case-subject">의학·보건 — 정밀의학과 유전자 맞춤 치료 (진로활동(동아리 활동))</span><span class="case-field">자연계</span></div><div class="case-body-text"><div class="case-good"><div class="case-good-label">✅ 우수 사례</div>p53 수업 후 "왜 같은 암 환자도 치료 반응이 다른가?" 의문 → 정밀의학 논문 3편 비교·TCGA 공개 데이터 직접 분석 → "기술은 있는데 접근성·비용 문제" 한계 발견 → 의료 형평성 논문 추가 탐구 → 진로: "유전체 분석 기반 정밀의학 전문의"로 구체화.</div><div class="case-eval"><b>🏫 입학사정관 평가 (경희대)</b><br>공개 데이터베이스 직접 활용, 탐구 중 새 한계 발견, 진로 구체화까지 이어지는 흐름이 최고 수준 탐구입니다.</div><div class="case-src">출처: 경희대학교 2026학년도 학생부전형 가이드북 Vol.41 (iphak.khu.ac.kr)</div></div></div>
         <div class="case-card"><div class="case-card-hd"><span class="case-univ">성균관대 탐구역량 평가기준</span><span class="case-subject">환경공학 — 미세먼지 국제 협력 탐구</span><span class="case-field">자연계</span></div><div class="case-body-text"><div class="case-good"><div class="case-good-label">✅ 우수 사례</div>기술 비교 후 "기술이 있는데 왜 한국 미세먼지는 여전히 심각?" 새 의문 → 중국 월경오염 데이터+한중 환경협력+EU CLRTAP 협약 비교 → "기술+국제협약 동시 필요" 결론 → 진로: "환경공학 기술+국제 환경 정책 전문가"로 구체화.</div><div class="case-eval"><b>🏫 입학사정관 평가 (성균관대)</b><br>기술 탐구에서 국제 정책으로 확장되는 융합 시각이 탐구역량의 핵심 증거입니다.</div><div class="case-src">출처: 성균관대학교 학생부종합전형 평가기준 (admission.skku.edu)</div></div></div>
       </div>
       <div class="case-panel" id="case_n_hum">
-        <div class="case-card"><div class="case-card-hd"><span class="case-univ">동국대 2026 가이드북</span><span class="case-subject">법학 — AI 저작권과 특별법 탐구 (진로활동)</span><span class="case-field">인문계</span></div><div class="case-body-text"><div class="case-good"><div class="case-good-label">✅ 우수 사례</div>1학년 AI 판례·법률 개관 → 2학년 AI 이미지 저작권 귀속 문제 심화(현행법 vs 미국·EU 판례 비교) → 3학년 "한국에 AI 창작물 전담 특별법 필요?" 탐구 + 직접 특별법 초안 조항 설계 → 진로: "AI 기술 발전에 맞는 법 체계를 만드는 입법 전문가"로 구체화.</div><div class="case-eval"><b>🏫 입학사정관 평가 (동국대)</b><br>학년별 탐구 심화·체계화, 직접 법안 초안을 설계하는 실제 전공 행위 경험이 진로역량의 정점입니다.</div><div class="case-src">출처: 동국대학교 2026학년도 학생부위주전형 가이드북 (ipsi.dongguk.edu)</div></div></div>
+        <div class="case-card"><div class="case-card-hd"><span class="case-univ">동국대 2026 가이드북</span><span class="case-subject">법학 — AI 저작권과 특별법 탐구 (진로활동(동아리 활동))</span><span class="case-field">인문계</span></div><div class="case-body-text"><div class="case-good"><div class="case-good-label">✅ 우수 사례</div>1학년 AI 판례·법률 개관 → 2학년 AI 이미지 저작권 귀속 문제 심화(현행법 vs 미국·EU 판례 비교) → 3학년 "한국에 AI 창작물 전담 특별법 필요?" 탐구 + 직접 특별법 초안 조항 설계 → 진로: "AI 기술 발전에 맞는 법 체계를 만드는 입법 전문가"로 구체화.</div><div class="case-eval"><b>🏫 입학사정관 평가 (동국대)</b><br>학년별 탐구 심화·체계화, 직접 법안 초안을 설계하는 실제 전공 행위 경험이 진로역량의 정점입니다.</div><div class="case-src">출처: 동국대학교 2026학년도 학생부위주전형 가이드북 (ipsi.dongguk.edu)</div></div></div>
         <div class="case-card"><div class="case-card-hd"><span class="case-univ">한양대·중앙대 공통 평가기준</span><span class="case-subject">경제학 — 플랫폼 노동과 사회보험 정책 탐구</span><span class="case-field">인문계</span></div><div class="case-body-text"><div class="case-good"><div class="case-good-label">✅ 우수 사례</div>배달 플랫폼 산재보험 뉴스 → 고용노동부 통계+OECD 보고서+EU 지침 비교 → 한국·EU 접근 차이 분석 → "사회보험 확대+플랫폼 기업 책임 명시" 정책안 자체 도출 → 진로: "노동경제학+사회정책 전문가"로 구체화.</div><div class="case-eval"><b>🏫 입학사정관 평가 (한양대·중앙대)</b><br>교과 내용을 실제 사회 문제에 적용하고 자신만의 정책안을 제시하는 것이 진로역량의 강력한 증거입니다.</div><div class="case-src">출처: 한양대 2026 가이드북 (go.hanyang.ac.kr), 중앙대 학종 안내 (admission.cau.ac.kr)</div></div></div>
       </div>
       <div class="case-panel" id="case_n_art">
@@ -1586,7 +1586,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
         <textarea data-key="n_trig" rows="3" placeholder="뉴스·체험·수업·책 중 어떤 순간이 계기가 됐는지 구체적으로"></textarea>
         <button class="ai-coach-btn" data-key="n_trig" type="button">🤖 AI에게 심화 질문받기</button><div class="ai-bubble" id="aib_n_trig"></div>
         <div class="auto-hint" id="ah_n_trig"><div class="ah-t">✏️ 진로 계기 쓰기 공식</div><ul class="ah-l"><li>언제, 어떤 상황에서 (날짜/장소)</li><li>무엇을 보거나 들었는지</li><li>"그때 나는 ~을 생각했다"로 마무리</li></ul></div>
-        <div class="sutek-bar"><b>📌 세특 연결</b> 진로 계기가 구체적일수록 진로활동 세특에 "~을 계기로 ~에 대한 관심이 구체화되어"로 표현됩니다</div>
+        <div class="sutek-bar"><b>📌 세특 연결</b> 진로 계기가 구체적일수록 진로활동(동아리 활동) 세특에 "~을 계기로 ~에 대한 관심이 구체화되어"로 표현됩니다</div>
         <div class="fhint">진로 탐색에 결정적이었던 순간 — 날짜·상황 구체적으로</div>
         
         <div class="ex-wrap" id="exw_n_trig"><div class="ex-tabs"><button class="ex-tab" data-track="sci" onclick="swEx(this)">🔬 이과</button><button class="ex-tab" data-track="hum" onclick="swEx(this)">📖 문과</button><button class="ex-tab" data-track="art" onclick="swEx(this)">🎨 예체능</button><button class="ex-tab on" data-track="com" onclick="swEx(this)">🔀 융합</button></div><div class="ex-panel" data-track="sci"><b>예시(이과) </b>생명과학Ⅱ(4월) p53 유전자를 배운 뒤, 암으로 투병 중인 할아버지를 떠올렸다. 의사가 이 원리를 알면 치료 전략이 달라진다는 것을 느꼈다.</div><div class="ex-panel" data-track="hum"><b>예시(문과) </b>사회문화 수업에서 사교육비 통계를 보고 "왜 어떤 아이는 기회가 많고 어떤 아이는 적을까?"를 생각하게 됐다. 사회 불평등을 연구하는 사람이 되고 싶어졌다.</div><div class="ex-panel" data-track="art"><b>예시(예체능) </b>미술 수업에서 "좋은 디자인이 사람의 행동을 바꾼다"는 말을 들은 뒤, 병원·학교 공간을 더 사람 친화적으로 만드는 공간 디자이너를 꿈꾸게 됐다.</div><div class="ex-panel on" data-track="com"><b>예시(융합) </b>기후변화 토론 수업(5월)에서 청소년 기후운동을 알게 됐다. 정책을 연구하고 설계하는 사람이 되어 환경 문제를 구조적으로 해결하고 싶어졌다.</div></div>
@@ -1598,7 +1598,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
         <textarea data-key="n_q" rows="2" placeholder="내 진로·전공과 직접 연결되는 질문"></textarea>
         <button class="ai-coach-btn" data-key="n_q" type="button">🤖 AI에게 심화 질문받기</button><div class="ai-bubble" id="aib_n_q"></div>
         <div class="auto-hint" id="ah_n_q"><div class="ah-t">✏️ 좋은 진로 탐구 질문 조건</div><ul class="ah-l"><li>희망 직업·학과와 직접 연결</li><li>단순 조사가 아닌 분석·비교 필요</li><li>내 경험이나 관심이 담겨 있음</li></ul></div>
-        <div class="sutek-bar"><b>📌 세특 연결</b> 이 질문이 진로활동 세특의 "~에 관한 심층 탐구 질문을 설정하고"로 이어집니다</div>
+        <div class="sutek-bar"><b>📌 세특 연결</b> 이 질문이 진로활동(동아리 활동) 세특의 "~에 관한 심층 탐구 질문을 설정하고"로 이어집니다</div>
         
         <div class="ex-wrap" id="exw_n_q"><div class="ex-tabs"><button class="ex-tab" data-track="sci" onclick="swEx(this)">🔬 이과</button><button class="ex-tab" data-track="hum" onclick="swEx(this)">📖 문과</button><button class="ex-tab" data-track="art" onclick="swEx(this)">🎨 예체능</button><button class="ex-tab on" data-track="com" onclick="swEx(this)">🔀 융합</button></div><div class="ex-panel" data-track="sci"><b>예시(이과) </b>표적치료제 내성 발생 메커니즘은 무엇이며, CAR-T 세포치료는 이를 어떻게 극복하려 하는가?</div><div class="ex-panel" data-track="hum"><b>예시(문과) </b>한국 교육 불평등 해소를 위한 보육·대학 무상교육 정책의 실효성은 어떻게 다르며, 더 효과적인 접근은 무엇인가?</div><div class="ex-panel" data-track="art"><b>예시(예체능) </b>색채 심리학이 상업·치유·학습 공간에 어떻게 다르게 적용되며, 학교 공간에 최적화된 색채 설계 원칙은 무엇인가?</div><div class="ex-panel on" data-track="com"><b>예시(융합) </b>청소년 기후행동 실천을 가로막는 장벽은 무엇이며, 넛지 기반 정책 설계가 이를 어떻게 극복할 수 있는가?</div></div>
       </div>
@@ -1701,9 +1701,9 @@ body:not(.min-mode) .deep-prompt { display: block; }
     </div>
   </div>
 
-  <!-- 진로 탐색 (진로활동 특별 섹션) -->
+  <!-- 진로 탐색 (진로활동(동아리 활동) 특별 섹션) -->
   <div class="arr">↓</div>
-  <div class="slabel">💼 진로·직업 직접 탐색 — 진로활동의 핵심!</div>
+  <div class="slabel">💼 진로·직업 직접 탐색 — 진로활동(동아리 활동)의 핵심!</div>
   <div class="card n3">
     <div class="card-hd">🎓 진로·전공 알아보기</div>
     <div class="frow">
@@ -1866,7 +1866,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
         <textarea data-key="n_bio" rows="6" placeholder="생기부 특기사항 초안
 
 패턴: [경험/수업]에서 [진로 관련 호기심]을 갖고 [탐구방법들]로 탐구함. [핵심발견+비교분석]. [새의문]이 생겨 [심화탐구]로 이어지며 [진로 구체화]로 발전함.
-진로활동 500자 이내 / 체크: ①진로연결성 ②탐구주도성 ③비교분석 ④성장"></textarea>
+진로활동(동아리 활동) 500자 이내 / 체크: ①진로연결성 ②탐구주도성 ③비교분석 ④성장"></textarea>
       </div>
     </div>
     <div class="frow">
@@ -1881,7 +1881,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
 <!-- ══════ 팀프로젝트 패널 ══════ -->
 <div class="panel" id="p2">
   <div class="topic-hero">
-    <div><h3>🤝 팀프로젝트 활동지</h3><p>공동 주제 속에서 나의 역할, 자료 검증, 갈등 조정, 개인 성장까지 따로 기록합니다. 자율활동·진로활동 어디에 연결할지 선택해 작성하세요.</p></div>
+    <div><h3>🤝 팀프로젝트 활동지</h3><p>공동 주제 속에서 나의 역할, 자료 검증, 갈등 조정, 개인 성장까지 따로 기록합니다. 자율활동·진로활동(동아리 활동) 어디에 연결할지 선택해 작성하세요.</p></div>
     <div class="topic-actions"><button class="topic-link" type="button" onclick="openTopicHelp()">자료 검색 열기</button></div>
   </div>
 
@@ -1890,7 +1890,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
     <div class="info-row">
       <div class="ic"><div class="flbl">학번</div><div class="fbody"><input data-key="t_no" placeholder="예) 30101"></div></div>
       <div class="ic"><div class="flbl">이름</div><div class="fbody"><input data-key="t_name" placeholder="예) 김OO"></div></div>
-      <div class="ic"><div class="flbl">활동 구분</div><div class="fbody"><input data-key="t_type" placeholder="예) 자율활동 / 진로활동 / 동아리 연계"></div></div>
+      <div class="ic"><div class="flbl">활동 구분</div><div class="fbody"><input data-key="t_type" placeholder="예) 자율활동 / 진로활동(동아리 활동) / 동아리 연계"></div></div>
       <div class="ic"><div class="flbl">팀명</div><div class="fbody"><input data-key="t_team" placeholder="예) 데이터 탐구팀"></div></div>
       <div class="ic"><div class="flbl">탐구 기간</div><div class="fbody"><input data-key="t_period" placeholder="예) 5월 1주 ~ 6월 2주"></div></div>
     </div>
@@ -1916,7 +1916,7 @@ body:not(.min-mode) .deep-prompt { display: block; }
     <div class="card-hd">👥 역할 분담 기록</div>
     <div class="frow"><div class="flbl">팀원별<br>역할</div><div class="fbody"><textarea data-key="t_roles" rows="5" placeholder="이름 / 역할 / 맡은 자료 / 산출물"></textarea><div class="fhint">역할명만 쓰지 말고 조사·분석·시각화·발표·검증 등 실제 수행 내용을 씁니다.</div><div class="fex"><b>예시)</b> A: 측정 장소 선정·기록표 제작 / B: KOSIS·환경부 통계 조사 / C: 측정값 그래프화 / 나: 논문·기사 원자료 대조, 발표 결론 구조화</div></div></div>
     <div class="frow"><div class="flbl">나의 핵심<br>기여</div><div class="fbody"><textarea data-key="t_contrib" rows="4" placeholder="내가 없었다면 팀 결과가 어떻게 달라졌을지 중심으로"></textarea><button class="ai-coach-btn" data-key="t_contrib" type="button">🤖 AI에게 심화 질문받기</button><div class="ai-bubble" id="aib_t_contrib"></div><div class="auto-hint" id="ah_t_contrib"><div class="ah-t">✏️ 나의 기여 쓰기 공식</div><ul class="ah-l"><li>내가 담당한 파트를 구체적으로</li><li>어떤 방법으로 조사·실험했는지</li><li>팀 결과에 어떻게 연결됐는지</li></ul></div><div class="fex"><b>대학 우수사례형 예시)</b> 뉴스 기사에서 제시한 수치가 원자료의 연평균 수치인지 특정일 수치인지 구분되지 않아 환경부 원자료를 다시 확인했고, 팀 발표에서 ‘단정적 주장’ 대신 ‘자료 조건에 따른 해석’으로 결론을 수정하도록 제안함.</div></div></div>
-    <div class="frow"><div class="flbl">희망 진로<br>연결</div><div class="fbody"><textarea data-key="t_career" rows="3" placeholder="진로활동으로 쓰는 경우 내 희망 진로·학과와 연결"></textarea><div class="fex"><b>예시)</b> 환경공학과 희망자로서 단순 캠페인보다 측정 방법, 오염원, 저감 기술의 한계를 함께 봐야 한다는 점을 팀에 제안함.</div></div></div>
+    <div class="frow"><div class="flbl">희망 진로<br>연결</div><div class="fbody"><textarea data-key="t_career" rows="3" placeholder="진로활동(동아리 활동)으로 쓰는 경우 내 희망 진로·학과와 연결"></textarea><div class="fex"><b>예시)</b> 환경공학과 희망자로서 단순 캠페인보다 측정 방법, 오염원, 저감 기술의 한계를 함께 봐야 한다는 점을 팀에 제안함.</div></div></div>
   </div>
 
   <div class="arr">↓</div>
